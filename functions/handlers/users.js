@@ -7,13 +7,6 @@ const firebase = require('firebase');
 firebase.initializeApp(config);
 
 var nodemailer = require("nodemailer");
-var transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: "wassim.bekalti1@gmail.com",
-    pass: "wassimos321"
-  }
-});
 
 const {
   validateSignupData,
